@@ -1,0 +1,2 @@
+# E-Ticaret_Deneme
+ 
