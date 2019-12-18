@@ -20,6 +20,10 @@ namespace ETicaret_Entity.Entity
 
         public decimal ProductPrice { get; set; }
 
+        public int ProductStock { get; set; }
+
+        public bool isActive { get; set; }
+
 
         public int CategoryId { get; set; }
 
@@ -30,5 +34,3 @@ namespace ETicaret_Entity.Entity
         public virtual ICollection<Image> Images { get; set; }
     }
 }
-
-///aciklama
