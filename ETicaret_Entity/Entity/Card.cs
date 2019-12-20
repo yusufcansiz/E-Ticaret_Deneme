@@ -4,6 +4,10 @@ namespace ETicaret_Entity.Entity
 {
     public class Card
     {
+        public Card()
+        {
+            Products = new HashSet<Product>();
+        }
         public int CardId { get; set; }
 
         public decimal Quantity { get; set; }

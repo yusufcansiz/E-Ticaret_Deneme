@@ -10,6 +10,7 @@ namespace ETicaret_Entity.Entity
     {
         public int PaymentId { get; set; }
 
+
         public int UserId { get; set; }
 
         public virtual User User { get; set; }

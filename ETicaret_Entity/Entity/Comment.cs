@@ -9,6 +9,9 @@
         public int Point { get; set; }
 
 
+        public int UserId { get; set; }
+
+        public virtual User User { get; set; }
 
         public int ProductId { get; set; }
 

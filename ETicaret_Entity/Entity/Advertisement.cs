@@ -4,6 +4,10 @@ namespace ETicaret_Entity.Entity
 {
     public class Advertisement
     {
+        public Advertisement()
+        {
+            Images = new HashSet<Image>();
+        }
         public int AdvertisementId { get; set; }
 
         public string AdvertisementLink { get; set; }

@@ -4,6 +4,10 @@ namespace ETicaret_Entity.Entity
 {
     public class FavoriteList
     {
+        public FavoriteList()
+        {
+            Products = new HashSet<Product>();
+        }
         public int FavoriteListId { get; set; }
 
 

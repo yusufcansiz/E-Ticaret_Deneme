@@ -8,6 +8,10 @@ namespace ETicaret_Entity.Entity
 {
     public class User
     {
+        public User()
+        {
+            Comments = new HashSet<Comment>();
+        }
         public int UserId { get; set; }
 
         public string Email { get; set; }

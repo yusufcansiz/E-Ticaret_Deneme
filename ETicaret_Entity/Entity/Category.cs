@@ -20,7 +20,7 @@ namespace ETicaret_Entity.Entity
 
         public int MainCategoryId { get; set; }
 
-        public bool IsActive { get; set; }
+        public bool isActive { get; set; }
 
 
         public virtual ICollection<Product> Products { get; set; }
