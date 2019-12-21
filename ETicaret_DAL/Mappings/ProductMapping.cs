@@ -18,7 +18,9 @@ namespace ETicaret_DAL.Mappings
             Property(x => x.ProductProperty).IsOptional().HasColumnType("nvarchar").HasMaxLength(50);
             Property(x => x.ProductPrice).IsRequired().HasColumnType("money");
             Property(x => x.ProductStock).IsOptional();
-            Property(x => x.isActive).IsRequired();
+            Property(x => x.IsActive).IsRequired();
+
+            HasRequired(x => x.Category).WithMany(c => c.Products).HasForeignKey(x => x.CategoryId);
 
         }
     }

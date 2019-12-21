@@ -10,7 +10,9 @@ namespace ETicaret_Entity.Entity
     {
         public User()
         {
-            Comments = new HashSet<Comment>();
+            Comment = new HashSet<Comment>();
+
+            Payment = new HashSet<Payment>();
         }
         public int UserId { get; set; }
 
@@ -30,15 +32,17 @@ namespace ETicaret_Entity.Entity
 
         public int CardId { get; set; }
 
-        public virtual Card Cards { get; set; }
+        public virtual Card Card { get; set; }
 
         public int FavoriteListId { get; set; }
 
         public virtual FavoriteList FavoriteList { get; set; }
 
-        public virtual ICollection<Comment> Comments { get; set; }
+        public virtual ICollection<Comment> Comment { get; set; }
 
-        
+        public virtual ICollection<Payment> Payment{ get; set; }
+
+
     }
 }
 

@@ -8,13 +8,12 @@ using System.Threading.Tasks;
 
 namespace ETicaret_DAL.Mappings
 {
-    public class PaymentMapping : EntityTypeConfiguration<Payment>
+    public class AdvertisementMapping : EntityTypeConfiguration<Advertisement>
     {
-        public PaymentMapping()
+        public AdvertisementMapping()
         {
-            HasKey(x => x.PaymentId);
-
-            HasRequired(x => x.User).WithMany(u => u.Payment).HasForeignKey(x => x.UserId);
+            HasKey(x => x.AdvertisementId);
+            Property(x => x.AdvertisementLink).IsOptional().HasMaxLength(250);
         }
     }
 }

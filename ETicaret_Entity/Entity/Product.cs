@@ -9,6 +9,10 @@ namespace ETicaret_Entity.Entity
             Comments = new HashSet<Comment>();
 
             Images = new HashSet<Image>();
+
+            FavoriteList = new HashSet<FavoriteList>();
+
+            Cards = new HashSet<Card>();
         }
         public int ProductId { get; set; }
 
@@ -22,7 +26,7 @@ namespace ETicaret_Entity.Entity
 
         public int ProductStock { get; set; }
 
-        public bool isActive { get; set; }
+        public bool IsActive { get; set; }
 
 
 
@@ -33,5 +37,9 @@ namespace ETicaret_Entity.Entity
         public virtual ICollection<Comment> Comments { get; set; }
 
         public virtual ICollection<Image> Images { get; set; }
+
+        public virtual ICollection<Card> Cards { get; set; }
+
+        public virtual ICollection<FavoriteList> FavoriteList{ get; set; }
     }
 }

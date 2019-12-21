@@ -17,6 +17,10 @@ namespace ETicaret_Entity.Entity
 
         public virtual User User{ get; set; }
 
+        public int PaymentId { get; set; }
+
+        public virtual Payment Payment{ get; set; }
+
         public virtual ICollection<Product> Products { get; set; }
     }
 }

@@ -6,7 +6,7 @@
 
         public string CommentDescription { get; set; }
 
-        public int Point { get; set; }
+        public int CommentPoint { get; set; }
 
 
         public int UserId { get; set; }
@@ -15,6 +15,6 @@
 
         public int ProductId { get; set; }
 
-        public virtual Product Products { get; set; }
+        public virtual Product Product { get; set; }
     }
 }

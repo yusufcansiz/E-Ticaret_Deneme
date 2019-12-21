@@ -20,28 +20,10 @@ namespace ETicaret_DAL.Mappings
             Property(x => x.CardId).IsRequired();
             Property(x => x.FavoriteListId).IsRequired();
 
-            //HasRequired(x => x.Cards).WithMany(c => c.User).HasForeignKey(x => x.CardId);
+            HasRequired(x => x.Card).WithRequiredPrincipal(c => c.User);
 
-
-            //HasRequired(x => x.Yazar)
-            //    .WithMany(y => y.Haberler)
-            //    .HasForeignKey(x => x.YazarId);
+            HasRequired(x => x.FavoriteList).WithRequiredPrincipal(c => c.User);
         }
 
     }
 }
-
-/*
- HasMany(x => x.Kategoriler)
-                .WithMany(k => k.Haberler)
-                .Map(m =>
-                            {
-                                m.ToTable("Haber_Kategori");
-                                m.MapLeftKey("HaberId");
-                                m.MapRightKey("KategoriId");
-                            });
-
-            HasRequired(x => x.Yazar)
-                .WithMany(y => y.Haberler)
-                .HasForeignKey(x => x.YazarId);
-     */
