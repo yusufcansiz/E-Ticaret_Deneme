@@ -17,6 +17,9 @@ namespace ETicaret_DAL.Mappings
             Property(x => x.CategoryDescription).HasMaxLength(100).IsRequired().HasColumnType("nvarchar");
             Property(x => x.MainCategoryId).IsOptional();
             Property(x => x.IsActive).IsRequired();
+
+            //HasRequired(x => x.MainCategory).WithMany(u => u.CategoryId).HasForeignKey(x => x.MainCategoryId);
+
         }
     }
 }

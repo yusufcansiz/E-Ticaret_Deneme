@@ -51,7 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Mappings\AdvertisementMapping.cs" />
     <Compile Include="Mappings\CardMapping.cs" />
     <Compile Include="Mappings\CategoryMapping.cs" />

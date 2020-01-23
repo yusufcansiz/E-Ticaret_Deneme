@@ -8,6 +8,7 @@ namespace ETicaret_Entity.Entity
         {
             Products = new HashSet<Product>();
         }
+
         public int FavoriteListId { get; set; }
 
 

@@ -18,10 +18,12 @@ namespace ETicaret_Entity.Entity
         
         public string CategoryDescription { get; set; }
 
-        public int MainCategoryId { get; set; }
-
         public bool IsActive { get; set; }
 
+
+        public int MainCategoryId { get; set; }
+
+        public virtual Category MainCategory { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }
     }

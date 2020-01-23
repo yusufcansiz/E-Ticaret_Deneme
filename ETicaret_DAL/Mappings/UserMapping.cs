@@ -15,10 +15,10 @@ namespace ETicaret_DAL.Mappings
             HasKey(x => x.UserId);
             Property(x => x.Email).IsRequired().HasMaxLength(35).HasColumnType("nvarchar");
             Property(x => x.Password).IsRequired().HasMaxLength(20).HasColumnType("nvarchar");
-            Property(x => x.UserName).IsOptional().HasMaxLength(30).HasColumnType("nvarchar");
+            Property(x => x.FirstName).IsOptional().HasMaxLength(30).HasColumnType("nvarchar");
             Property(x => x.LastName).IsOptional().HasMaxLength(30).HasColumnType("nvarchar");
-            Property(x => x.CardId).IsRequired();
-            Property(x => x.FavoriteListId).IsRequired();
+            Property(x => x.CardId).IsOptional();
+            Property(x => x.FavoriteListId).IsOptional();
 
             HasRequired(x => x.Card).WithRequiredPrincipal(c => c.User);
 
